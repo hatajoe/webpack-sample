@@ -1,6 +1,8 @@
 module.exports = {
   entry: {
-    bundle: "./src/js/entry.js"
+    index: "./src/js/index.js",
+    campaign1: "./src/js/campaign1.js",
+    campaign2: "./src/js/campaign2.js"
   },
   output: {
     path: './public/assets/js',
@@ -19,11 +21,15 @@ module.exports = {
       {
         test: /\.css$/,
         loader: "style!css"
+      },
+      {
+        test: /\.html$/,
+        loader: "html"
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.css']
+    extensions: ['', '.js', '.css', '.html']
   },
   eslint: {
     configFile: './.eslintrc'
