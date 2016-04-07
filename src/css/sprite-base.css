@@ -1,0 +1,16 @@
+.icon-chrome {
+  display: inline-block;
+  background-position: 0px 0px;
+  width: 512px;
+  height: 512px;
+  background-image: url('../../public/assets/img/sprite-base.png');
+}
+
+.icon-safari {
+  display: inline-block;
+  background-position: 0px -512px;
+  width: 512px;
+  height: 512px;
+  background-image: url('../../public/assets/img/sprite-base.png');
+}
+
