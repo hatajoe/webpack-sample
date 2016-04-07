@@ -32,11 +32,18 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html"
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?name=../img/[name].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.css', '.html']
+    extensions: ['', '.js', '.css', '.html', '.png']
   },
   eslint: {
     configFile: './.eslintrc'

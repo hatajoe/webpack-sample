@@ -1,4 +1,5 @@
 require("../css/common/style");
+require("../css/sprite-base");
 var header = require("../template/common/header");
 var footer = require("../template/common/footer");
 var body = require("../template/index/body");
